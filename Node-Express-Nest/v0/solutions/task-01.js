@@ -2,6 +2,9 @@
 const express = require('express');
 const app = express();
 
-// TODO: implement todos storage and GET /todos logic
+app.get('/todos', (req, res) => {
+    const todos = [{ id: 1, title: 'Buy milk', completed: false }];
+    res.send(todos);
+})
 
 module.exports = app; 
