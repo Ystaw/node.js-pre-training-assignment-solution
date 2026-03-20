@@ -5,6 +5,6 @@ import { Controller, Get } from '@nestjs/common';
 export class TodosController {
   @Get()
   getTodos() {
-    // TODO: implement
+    return [{ id: 1, title: 'Buy milk', completed: false }]
   }
 } 
